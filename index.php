@@ -15,8 +15,14 @@
   <?php 
     include('component/navigation.html');
     include('component/banner.html'); 
+  ?>
+    <div class="parallax2">
+  <?php
     include('component/product.html');
     include('component/video.html');
+  ?>
+    </div>
+  <?php
     include('component/footer.html');
   ?>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>

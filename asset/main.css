@@ -1,4 +1,4 @@
-:root{
+:root {
     --font-size-menu: 22px;
     --font-weight-menu: bold;
 }
@@ -14,7 +14,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-nav{
+nav {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 50px 50px 50px 50px;
     height: 100px;
@@ -27,12 +27,12 @@ nav{
     z-index: 9999;
 }
 
-.logo{
+.logo {
     padding: 18px 40px;
 }
 
 /* Navigation Menu */
-.menu{
+.menu {
     text-align: right;
     color: #eee;
     overflow: hidden;
@@ -40,7 +40,7 @@ nav{
 }
 
 /* Navigation Links */
-.menu a{
+.menu a {
     float: right;
     font-size: var(--font-size-menu);
     font-weight: var(--font-weight-menu);
@@ -51,7 +51,7 @@ nav{
 }
 
 /* Subnavigation Menu */
-.subnav{
+.subnav {
     float: right;
     overflow: hidden;
     padding: 14px 16px;
@@ -61,7 +61,7 @@ nav{
 }
 
 /* Subnav Content Position Absolute */
-.subnav-content{
+.subnav-content {
     display: none;
     position: absolute;
     top: 78px;
@@ -74,7 +74,7 @@ nav{
 }
 
 /* Subnav Content Links */
-.subnav-content a{
+.subnav-content a {
     float: left;
     color: #171717;
     text-decoration: none;
@@ -82,20 +82,20 @@ nav{
 
 /* Hover Navigation Links */
 .menu a:hover,
-.subnav:hover{
+.subnav:hover {
     background-color: rgba(0, 51, 255, 0.4);
     border-radius: 45px;
 
 }
 
 /* Hover Subnav Content */
-.subnav-content a:hover{
+.subnav-content a:hover {
     background-color: transparent;
     margin-top: -10px;
 }
 
 /* Display Subnav Content when the mouse over it */
-.subnav:hover .subnav-content{
+.subnav:hover .subnav-content {
     display: block;
 }
 
@@ -116,13 +116,20 @@ nav{
 }
 
 .card {
+    background-color: rgba(255, 255, 255, 0.198);
+    color: #eee;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 20px;
     border: transparent;
-    border-radius: 50px;
-    -webkit-box-shadow: 4px 3px 16px 0px rgba(82,82,82,0.32); 
-    box-shadow: 4px 3px 16px 0px rgba(82,82,82,0.32);
+    border-radius: 80px 80px 80px 0px;
+    -webkit-box-shadow: 4px 3px 16px 0px rgba(82, 82, 82, 0.32);
+    box-shadow: 4px 3px 16px 0px rgba(82, 82, 82, 0.32);
+}
+
+.card:hover {
+    margin-top: -10px;
+    border-radius: 80px 0px 80px 80px;
 }
 
 footer {
@@ -172,7 +179,8 @@ footer span.footmenu img {
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
 }
 
 .responsive-iframe {
@@ -186,6 +194,38 @@ footer span.footmenu img {
     border: none;
 }
 /* END Responsive Iframe */
+
+.parallax1 {
+    margin-top: -50px;
+    margin-bottom: -20px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    /* The image used */
+    background-image: url('../img/parallax1.jpg');
+    height: min-content;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    margin-top: -50px;
+    margin-bottom: -20px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    /* The image used */
+    background-image: url('../img/parallax2-black.jpg');
+    height: min-content;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 swiper-container {
     width: 100%;
