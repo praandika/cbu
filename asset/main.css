@@ -48,6 +48,7 @@ nav {
     padding: 14px 16px;
     text-decoration: none;
     color: #eee;
+    transition: 0.2s ease-out;
 }
 
 /* Subnavigation Menu */
@@ -58,6 +59,7 @@ nav {
     font-size: var(--font-size-menu);
     font-weight: var(--font-weight-menu);
     cursor: pointer;
+    transition: 0.2s ease-out;
 }
 
 /* Subnav Content Position Absolute */
@@ -66,9 +68,9 @@ nav {
     position: absolute;
     top: 78px;
     right: 8px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.911);
     width: 80%;
-    z-index: 99999 !important;
+    z-index: 1;
     border-radius: 0 0 50px 50px;
     padding: 20px;
 }
@@ -123,13 +125,24 @@ nav {
     padding: 20px;
     border: transparent;
     border-radius: 80px 80px 80px 0px;
-    -webkit-box-shadow: 4px 3px 16px 0px rgba(82, 82, 82, 0.32);
-    box-shadow: 4px 3px 16px 0px rgba(82, 82, 82, 0.32);
+    transition: 0.2s ease-out;
+    /* -webkit-box-shadow: 4px 3px 16px 0px rgba(82, 82, 82, 0.32);
+    box-shadow: 4px 3px 16px 0px rgba(82, 82, 82, 0.32); */
+}
+
+.card .label {
+    transition: width 1s ease-out;
 }
 
 .card:hover {
     margin-top: -10px;
     border-radius: 80px 0px 80px 80px;
+}
+
+.card:hover .label {
+    background-color: #0c0c0c;
+    width: 200px;
+    padding: 10px;
 }
 
 footer {
@@ -193,6 +206,7 @@ footer span.footmenu img {
     height: 100%;
     border: none;
 }
+
 /* END Responsive Iframe */
 
 .parallax1 {
@@ -225,6 +239,37 @@ footer span.footmenu img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.btn-floating {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    z-index: 999;
+    border-radius: 0px 100px 100px 100px;
+}
+
+.btn-floating img {
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.pulse {
+    animation: pulse-animation 0.8s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 255, 38, 0.886);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 255, 21, 0);
+    }
 }
 
 swiper-container {

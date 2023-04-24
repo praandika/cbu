@@ -24,6 +24,7 @@
     </div>
   <?php
     include('component/footer.html');
+    include('component/floating-btn.html');
   ?>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 </body>
