@@ -31,6 +31,6 @@
   ?>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
   <script src="asset/sidenav.js"></script>
-  <script src="asset/link.js"></script>
+  <script src="asset/link-wa.js"></script>
 </body>
 </html>
