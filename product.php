@@ -10,11 +10,11 @@
 <body>
     <?php 
         include('component/navigation.html');
-        include('component/banner.html'); 
+        include('component/banner-product.php'); 
     ?>
     <div class="parallax2">
     <?php
-        include('component/product.html');
+        include('component/model.php');
         include('component/cta.html');
         include('component/video.html');
     ?>
