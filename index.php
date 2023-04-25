@@ -19,6 +19,7 @@
     <div class="parallax2">
   <?php
     include('component/product.html');
+    include('component/cta.html');
     include('component/video.html');
   ?>
     </div>
@@ -27,5 +28,6 @@
     include('component/floating-btn.html');
   ?>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <script src="asset/sidenav.js"></script>
 </body>
 </html>

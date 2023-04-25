@@ -1,10 +1,11 @@
+<!-- Desktop Nav -->
 <nav>
     <div class="row">
         <div class="col-4 logo">
             <img src="../img/logo.png" class="img-fluid">
         </div>
         <div class="col-8 menu">
-            <a href="#">Contact</a>
+            <a href="https://yamahabismagroup.com/pilih-dealer/">Contact</a>
             <div class="subnav">Product
                 <div class="subnav-content">
                     <div class="row justify-content-md-center">
@@ -15,24 +16,65 @@
                             </a>
                         </div>
                         <div class="col-md-auto">
-                            <a href="#"><img src="../img/yz250x-menu.png" alt="YZ250X" class="img-fluid"> <br>
+                            <a href="#">
+                                <img src="../img/yz250x-menu.png" alt="YZ250X" class="img-fluid"> <br>
                                 YZ250X
                             </a>
                         </div>
                         <div class="col-md-auto">
-                            <a href="#"><img src="../img/yz250f-menu.png" alt="YZ250F" class="img-fluid"> <br>
+                            <a href="#">
+                                <img src="../img/yz250f-menu.png" alt="YZ250F" class="img-fluid"> <br>
                                 YZ250F
                             </a>
                         </div>
                         <div class="col-md-auto">
-                            <a href="#"><img src="../img/yz250fx-menu.png" alt="YZ250FX" class="img-fluid"> <br>
+                            <a href="#">
+                                <img src="../img/yz250fx-menu.png" alt="YZ250FX" class="img-fluid"> <br>
                                 YZ250FX
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="#">Main Website</a>
+            <a href="https://yamahabismagroup.com">Main Website</a>
         </div>
     </div>
 </nav>
+<!-- END Desktop Nav -->
+
+<!-- Mobile Nav -->
+<div id="mySidenav" class="sidenav">
+    <a href="https://yamahabismagroup.com">Main Website</a>
+    <a href="#" onclick="openProduct()" id="toggleProduct">Product</a>
+    <div id="sidenavProduct" class="sidenav-product fadeIn">
+        <div class="sidenav-card card fadeInAtas">
+            <a href="#" target="_blank">
+                <img src="../img/yz125x.png" alt="YZ125X" class="img-fluid"><span> YZ125X</span>
+            </a>
+        </div>
+        <div class="sidenav-card card fadeInKanan">
+            <a href="#" target="_blank">
+                <img src="../img/yz250x.png" alt="YZ250X" class="img-fluid"><span> YZ250X</span>
+            </a>
+        </div>
+        <div class="sidenav-card card fadeInKiri">
+            <a href="#" target="_blank">
+                <img src="../img/yz250f.png" alt="YZ250F" class="img-fluid"><span> YZ250F</span>
+            </a>
+        </div>
+        <div class="sidenav-card card fadeInBawah">
+            <a href="#" target="_blank">
+                <img src="../img/yz250fx.png" alt="YZ250FX" class="img-fluid"><span> YZ250FX</span>
+            </a>
+        </div>
+    </div>
+    <a href="https://yamahabismagroup.com/pilih-dealer/">Contact</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <img src="../img/icons8-menu-close.gif"> <span> Close</span>
+    </a>
+</div>
+
+<div class="mobile-nav fadeInKanan" onclick="openNav()">
+    <img src="../img/icons8-menu.gif"> <span> Menu</span>
+</div>
+<!-- END Mobile Nav -->
